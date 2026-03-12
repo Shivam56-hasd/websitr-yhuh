@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSOME CARE Beauty | Premium Skincare Serums</title>
+    <meta name="description" content="OSOME CARE Beauty - Premium face serums for radiant, glowing skin. Alpha Arbutin, Vitamin C, Niacinamide and more skincare solutions at ₹299.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Glow Orbs -->
+    <div class="ambient-glow">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        <div class="glow-orb glow-orb-3"></div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <span>✨ Nature Powered Serums for Healthy Skin ✨</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-text">
+                    <span class="logo-main">OSOMECARE</span>
+                    <span class="logo-sub">BEAUTY</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-btn search-btn" id="searchToggle"><i class="fas fa-search"></i></button>
+                <button class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <!-- Search Bar -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search products..." id="searchInput">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="home">
+        <div class="slider-wrapper">
+            <div class="slides" id="slides">
+                <div class="slide active" style="background-image: url('slider/1.png');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <span class="slide-badge">NEW ARRIVAL</span>
+                        <h1>Unlock Your<br><span class="gradient-text">Natural Glow</span></h1>
+                        <p>Premium skincare serums crafted with the finest ingredients for radiant, youthful skin.</p>
+                        <a href="#products" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('slider/2.png');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <span class="slide-badge">BEST SELLER</span>
+                        <h1>Vitamin C 15%<br><span class="gradient-text">Face Serum</span></h1>
+                        <p>Brighten your skin & boost radiance with our powerful Vitamin C formula.</p>
+                        <a href="#products" class="btn btn-primary">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('slider/3.png');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <span class="slide-badge">TRENDING</span>
+                        <h1>Dark Spot<br><span class="gradient-text">Correction</span></h1>
+                        <p>Reduce pigmentation and achieve clear, even-toned skin naturally.</p>
+                        <a href="#products" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('slider/4.png');">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <span class="slide-badge">PREMIUM CARE</span>
+                        <h1>All Serums at<br><span class="gradient-text">Just ₹299</span></h1>
+                        <p>Professional-grade skincare made accessible. Every product, one amazing price.</p>
+                        <a href="#products" class="btn btn-primary">Shop Collection <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- Marquee Banner -->
+    <div class="marquee-banner">
+        <div class="marquee-track">
+            <span>✦ DERMATOLOGIST TESTED</span>
+            <span>✦ PARABEN FREE</span>
+            <span>✦ NATURAL INGREDIENTS</span>
+            <span>✦ SUITABLE FOR ALL SKIN TYPES</span>
+            <span>✦ CRUELTY FREE</span>
+            <span>✦ MADE IN INDIA</span>
+            <span>✦ DERMATOLOGIST TESTED</span>
+            <span>✦ PARABEN FREE</span>
+            <span>✦ NATURAL INGREDIENTS</span>
+            <span>✦ SUITABLE FOR ALL SKIN TYPES</span>
+            <span>✦ CRUELTY FREE</span>
+            <span>✦ MADE IN INDIA</span>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">✦ OUR COLLECTION ✦</span>
+                <h2 class="section-title">Premium Face <span class="gradient-text">Serums</span></h2>
+                <p class="section-desc">Discover our range of scientifically formulated serums for radiant, healthy skin</p>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- Product 1: Alpha Arbutin 2% -->
+                <div class="product-card" data-product="alpha-arbutin">
+                    <div class="product-badge">BESTSELLER</div>
+                    <div class="product-image-wrapper">
+                        <div class="product-image-slider">
+                            <img src="Alpha Arbutin 2%/1.png" alt="Alpha Arbutin 2% Face Serum" class="product-img active">
+                            <img src="Alpha Arbutin 2%/2.png" alt="Alpha Arbutin 2% Face Serum - Details" class="product-img">
+                            <img src="Alpha Arbutin 2%/3.png" alt="Alpha Arbutin 2% Face Serum - Ingredients" class="product-img">
+                            <img src="Alpha Arbutin 2%/4.png" alt="Alpha Arbutin 2% Face Serum - Benefits" class="product-img">
+                            <img src="Alpha Arbutin 2%/5.png" alt="Alpha Arbutin 2% Face Serum - Usage" class="product-img">
+                        </div>
+                        <div class="product-img-dots"></div>
+                        <button class="quick-view-btn" data-product="alpha-arbutin"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">OSOME CARE</div>
+                        <h3 class="product-title">Alpha Arbutin 2% Face Serum</h3>
+                        <p class="product-subtitle">Dark Spot Corrector – 30ml</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (120+ Reviews)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <div class="product-price">
+                                <span class="current-price">₹299</span>
+                                <span class="original-price">₹499</span>
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Paraben Free</span>
+                            <span class="tag">All Skin Types</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://amzn.in/d/0avWFV3o" target="_blank" class="btn btn-buy">
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </a>
+                            <button class="btn btn-details" data-product="alpha-arbutin">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Vitamin C 15% -->
+                <div class="product-card" data-product="vitamin-c">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image-wrapper">
+                        <div class="product-image-slider">
+                            <img src="Vitamin C 15%/1.png" alt="Vitamin C 15% Face Serum" class="product-img active">
+                            <img src="Vitamin C 15%/2.png" alt="Vitamin C 15% Face Serum - Details" class="product-img">
+                            <img src="Vitamin C 15%/3.png" alt="Vitamin C 15% Face Serum - Ingredients" class="product-img">
+                            <img src="Vitamin C 15%/4.png" alt="Vitamin C 15% Face Serum - Benefits" class="product-img">
+                            <img src="Vitamin C 15%/5.png" alt="Vitamin C 15% Face Serum - Usage" class="product-img">
+                        </div>
+                        <div class="product-img-dots"></div>
+                        <button class="quick-view-btn" data-product="vitamin-c"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">OSOME CARE</div>
+                        <h3 class="product-title">Vitamin C 15% Face Serum</h3>
+                        <p class="product-subtitle">Skin Brightening & Glow Boosting – 30ml</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (95+ Reviews)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <div class="product-price">
+                                <span class="current-price">₹299</span>
+                                <span class="original-price">₹499</span>
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Antioxidant Rich</span>
+                            <span class="tag">All Skin Types</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://amzn.in/d/0hG2jXjs" target="_blank" class="btn btn-buy">
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </a>
+                            <button class="btn btn-details" data-product="vitamin-c">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Dark Spot Removal -->
+                <div class="product-card" data-product="dark-spot">
+                    <div class="product-badge hot">HOT</div>
+                    <div class="product-image-wrapper">
+                        <div class="product-image-slider">
+                            <img src="spot remover/1.png" alt="Dark Spot Removal Serum" class="product-img active">
+                            <img src="spot remover/2.png" alt="Dark Spot Removal Serum - Details" class="product-img">
+                            <img src="spot remover/3.png" alt="Dark Spot Removal Serum - Ingredients" class="product-img">
+                            <img src="spot remover/4.png" alt="Dark Spot Removal Serum - Benefits" class="product-img">
+                            <img src="spot remover/5.png" alt="Dark Spot Removal Serum - Usage" class="product-img">
+                        </div>
+                        <div class="product-img-dots"></div>
+                        <button class="quick-view-btn" data-product="dark-spot"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">OSOME CARE</div>
+                        <h3 class="product-title">Dark Spot Removal Serum</h3>
+                        <p class="product-subtitle">Reduces Pigmentation & Acne Marks – 30ml</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-text">4.5 (200+ Reviews)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <div class="product-price">
+                                <span class="current-price">₹299</span>
+                                <span class="original-price">₹499</span>
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Premium Packaging</span>
+                            <span class="tag">Unscented</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://amzn.in/d/0a07eXof" target="_blank" class="btn btn-buy">
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </a>
+                            <button class="btn btn-details" data-product="dark-spot">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Skin Brightening Face Serum -->
+                <div class="product-card" data-product="skin-brightening">
+                    <div class="product-badge">POPULAR</div>
+                    <div class="product-image-wrapper">
+                        <div class="product-image-slider">
+                            <img src="Skin Brightening Face Serum/1.png" alt="Skin Brightening Face Serum" class="product-img active">
+                            <img src="Skin Brightening Face Serum/2.png" alt="Skin Brightening Face Serum - Details" class="product-img">
+                            <img src="Skin Brightening Face Serum/3.png" alt="Skin Brightening Face Serum - Ingredients" class="product-img">
+                            <img src="Skin Brightening Face Serum/4.png" alt="Skin Brightening Face Serum - Benefits" class="product-img">
+                            <img src="Skin Brightening Face Serum/5.png" alt="Skin Brightening Face Serum - Usage" class="product-img">
+                        </div>
+                        <div class="product-img-dots"></div>
+                        <button class="quick-view-btn" data-product="skin-brightening"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">OSOME CARE</div>
+                        <h3 class="product-title">Skin Brightening Face Serum</h3>
+                        <p class="product-subtitle">For Glowing, Even Tone Skin – 30ml</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (150+ Reviews)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <div class="product-price">
+                                <span class="current-price">₹299</span>
+                                <span class="original-price">₹499</span>
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Fast Absorbing</span>
+                            <span class="tag">All Skin Types</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://amzn.in/d/0gWlCNsa" target="_blank" class="btn btn-buy">
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </a>
+                            <button class="btn btn-details" data-product="skin-brightening">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Niacinamide 10% -->
+                <div class="product-card" data-product="niacinamide">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image-wrapper">
+                        <div class="product-image-slider">
+                            <img src="Niacinamide 10%/1.png" alt="Niacinamide 10% Face Serum" class="product-img active">
+                            <img src="Niacinamide 10%/2.png" alt="Niacinamide 10% Face Serum - Details" class="product-img">
+                            <img src="Niacinamide 10%/3.png" alt="Niacinamide 10% Face Serum - Ingredients" class="product-img">
+                            <img src="Niacinamide 10%/4.png" alt="Niacinamide 10% Face Serum - Benefits" class="product-img">
+                            <img src="Niacinamide 10%/5.png" alt="Niacinamide 10% Face Serum - Usage" class="product-img">
+                        </div>
+                        <div class="product-img-dots"></div>
+                        <button class="quick-view-btn" data-product="niacinamide"><i class="fas fa-eye"></i> Quick View</button>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">OSOME CARE</div>
+                        <h3 class="product-title">Niacinamide 10% Face Serum</h3>
+                        <p class="product-subtitle">Reduces Blemishes & Pores – 30ml</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">5.0 (85+ Reviews)</span>
+                        </div>
+                        <div class="product-price-row">
+                            <div class="product-price">
+                                <span class="current-price">₹299</span>
+                                <span class="original-price">₹499</span>
+                                <span class="discount-badge">40% OFF</span>
+                            </div>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Paraben Free</span>
+                            <span class="tag">Natural</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://amzn.in/d/08IbB3M9" target="_blank" class="btn btn-buy">
+                                <i class="fas fa-shopping-cart"></i> Buy Now
+                            </a>
+                            <button class="btn btn-details" data-product="niacinamide">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Strip -->
+    <section class="features-strip">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                    <div class="feature-text">
+                        <strong>Free Delivery</strong>
+                        <span>On orders above ₹599</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="feature-text">
+                        <strong>100% Authentic</strong>
+                        <span>Genuine products only</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="feature-text">
+                        <strong>Natural Ingredients</strong>
+                        <span>Paraben & sulfate free</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <div class="feature-text">
+                        <strong>24/7 Support</strong>
+                        <span>Dedicated help center</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">✦ ABOUT US ✦</span>
+                    <h2 class="section-title">Why Choose<br><span class="gradient-text">OSOME CARE?</span></h2>
+                    <p>At OSOME CARE Beauty, we believe in the power of science-backed skincare. Our premium face serums are formulated with high-quality, natural ingredients to deliver visible results.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Premium Products</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.9★</span>
+                            <span class="stat-label">Average Rating</span>
+                        </div>
+                    </div>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dermatologist Tested Formulas</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Paraben Free & Natural Ingredients</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Suitable for All Skin Types</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cruelty Free & Made in India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-grid">
+                        <img src="Alpha Arbutin 2%/1.png" alt="Alpha Arbutin Product" class="about-img img-1">
+                        <img src="Vitamin C 15%/1.png" alt="Vitamin C Product" class="about-img img-2">
+                        <img src="Niacinamide 10%/1.png" alt="Niacinamide Product" class="about-img img-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">✦ TESTIMONIALS ✦</span>
+                <h2 class="section-title">What Our <span class="gradient-text">Customers</span> Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Vitamin C serum has completely transformed my skin! My dark spots have faded significantly and my skin glows like never before."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <strong>Priya S.</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Alpha Arbutin serum is amazing! Within 2 weeks, I could see visible changes in my pigmentation. Highly recommend to everyone."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <strong>Rahul M.</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Niacinamide serum has reduced my pores noticeably. Love that it's lightweight and absorbs quickly. Best at this price!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <strong>Ananya K.</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">✦ GET IN TOUCH ✦</span>
+                    <h2 class="section-title"><span class="gradient-text">Contact</span> Us</h2>
+                    <p>Have questions? We'd love to hear from you. Reach out to us through any of the channels below.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:osomecarebeauty39@gmail.com">osomecarebeauty39@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+917827042645">78270 42645</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                            <div>
+                                <strong>Instagram</strong>
+                                <a href="https://www.instagram.com/osomecarebeauty/" target="_blank">@osomecarebeauty</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/osomecarebeauty/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:osomecarebeauty39@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+917827042645" class="social-link"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="contactName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="contactPhone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="modal-images">
+                    <div class="modal-main-image">
+                        <img src="" alt="" id="modalMainImage">
+                    </div>
+                    <div class="modal-thumbnails" id="modalThumbnails"></div>
+                </div>
+                <div class="modal-info">
+                    <div class="modal-brand">OSOME CARE BEAUTY</div>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <div class="modal-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span>5.0 out of 5 stars</span>
+                    </div>
+                    <div class="modal-price">
+                        <span class="modal-current-price">₹299</span>
+                        <span class="modal-original-price">₹499</span>
+                        <span class="modal-discount">40% OFF</span>
+                    </div>
+                    <div class="modal-specs" id="modalSpecs"></div>
+                    <div class="modal-features">
+                        <h4>About this item</h4>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="" target="_blank" class="btn btn-buy btn-full" id="modalBuyBtn">
+                            <i class="fas fa-shopping-cart"></i> Buy Now – ₹299
+                        </a>
+                    </div>
+                    <div class="modal-trust">
+                        <span><i class="fas fa-check-circle"></i> Paraben Free</span>
+                        <span><i class="fas fa-check-circle"></i> Natural Ingredients</span>
+                        <span><i class="fas fa-check-circle"></i> All Skin Types</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-text">
+                            <span class="logo-main">OSOMECARE</span>
+                            <span class="logo-sub">BEAUTY</span>
+                        </div>
+                    </div>
+                    <p>Premium skincare serums crafted with science-backed ingredients for radiant, healthy skin. Made in India with love.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/osomecarebeauty/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:osomecarebeauty39@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+917827042645"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li><a href="https://amzn.in/d/0avWFV3o" target="_blank">Alpha Arbutin 2%</a></li>
+                        <li><a href="https://amzn.in/d/0hG2jXjs" target="_blank">Vitamin C 15%</a></li>
+                        <li><a href="https://amzn.in/d/0a07eXof" target="_blank">Dark Spot Removal</a></li>
+                        <li><a href="https://amzn.in/d/0gWlCNsa" target="_blank">Skin Brightening</a></li>
+                        <li><a href="https://amzn.in/d/08IbB3M9" target="_blank">Niacinamide 10%</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> osomecarebeauty39@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i> 78270 42645</li>
+                        <li><i class="fab fa-instagram"></i> @osomecarebeauty</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OSOME CARE Beauty. All Rights Reserved.</p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-amazon-pay"></i>
+                    <i class="fab fa-google-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/917827042645" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
